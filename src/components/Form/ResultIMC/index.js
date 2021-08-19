@@ -5,7 +5,7 @@ import styles from './styles'
 function ResultIMC(props) {
 
   const onShare = async () => {
-    const retult = await Share.share({
+    await Share.share({
       message: `Meu imc hoje é: ${props.resultIMC}`
     })
   }
@@ -22,7 +22,7 @@ function ResultIMC(props) {
           </TouchableOpacity>
         }
       </View>
-      
+
       <Text style={styles.message}>{props.messageResultIMC}</Text>
       <Text style={styles.resultImc}>{props.resultIMC}</Text>
     </View>
