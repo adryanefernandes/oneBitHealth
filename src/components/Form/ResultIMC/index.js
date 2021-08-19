@@ -12,19 +12,18 @@ function ResultIMC(props) {
 
   return (
     <View style={styles.container}>
-      <View style={styles.boxShare}>
-        {props.resultIMC !== null &&
-          <TouchableOpacity 
-          onPress={onShare}
-          style={styles.shared}
-          >
-            <Text style={styles.sharedText}>Compartilhar</Text>
-          </TouchableOpacity>
-        }
-      </View>
-
       <Text style={styles.message}>{props.messageResultIMC}</Text>
       <Text style={styles.resultImc}>{props.resultIMC}</Text>
+      
+      <View style={styles.boxShare}>
+        <TouchableOpacity
+          onPress={onShare}
+          style={styles.shared}
+        >
+          <Text style={styles.sharedText}>Compartilhar</Text>
+        </TouchableOpacity>
+      </View>
+
     </View>
   )
 }

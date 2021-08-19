@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
     width: '90%',
     backgroundColor: '#ff0043',
     paddingTop: 14,
-    paddingBottom: 14, 
+    paddingBottom: 14,
     marginLeft: 12,
     marginTop: 30,
   },
@@ -47,6 +47,24 @@ const styles = StyleSheet.create({
     color: "red",
     fontWeight: 'bold',
     paddingLeft: 20,
+  },
+  resultImc: {
+    width: '100%',
+    height: '50%'
+  },
+  listImcs: {
+    marginTop: 20,
+  },
+  imcItemContainer: {
+    fontSize: 24,
+    color: 'red',
+    height: 50,
+    width: '100%',
+    paddingRight: 20,
+  },
+  textItemContainer: {
+    fontSize: 14,
+    
   }
 })
 
