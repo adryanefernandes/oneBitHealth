@@ -1,6 +1,6 @@
 
 <div align="center">
-  <h1> oneBitHealth </h1>
+  <h1> oneBitHealth :1234: </h1>
   <b>Verifique seu IMC de forma fácil e prática</b>
 </div>
 
