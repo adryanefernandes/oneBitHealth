@@ -22,7 +22,8 @@ function Form() {
   const [errorMessage, setErrorMessage] = useState(null)
 
   const imcCalculator = () => {
-    const result = (weight / (height * height)).toFixed(2)
+    let heightFormat = height.replace(',', '.')
+    const result = (weight / (heightFormat * heightFormat)).toFixed(2)
 
     setImc(result)
   }
@@ -42,6 +43,8 @@ function Form() {
       setMessageImc("Seu IMC é igual:")
       setTextButton("Calcular novamente")
       setErrorMessage(null)
+
+      Keyboard.dismiss()
     } else {
       verificationImc()
       setImc(null)
